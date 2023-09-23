@@ -18,6 +18,11 @@ jvwikt-jvws-purge-cache:
 	$(PYTHON) $(PWB) login
 	$(PYTHON) $(PWB) touch -purge -page:"Wikisumber:Pendhapa"
 
+jvwiki-archive:
+	@cp -f "$(CFG)/user-jvwiki-config.py" "$(CFG)/user-config.py"
+	$(PYTHON) $(PWB) login
+	$(PYTHON) $(PWB) archivebot "Naraguna:LabdajiwaBot/konfig arsip"
+
 install-venv:
 	python3 -m venv .pyvenv
 	source .pyvenv/bin/activate

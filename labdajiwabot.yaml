@@ -13,3 +13,10 @@
   no-filelog: true
   schedule: "5 0 1 * *"
   emails: onfailure
+# Daily archive at 00:30.
+- image: python3.9
+  name: daily-jvwiki-archive
+  command: make jvwiki-archive
+  no-filelog: true
+  schedule: "30 0 * * *"
+  emails: onfailure
