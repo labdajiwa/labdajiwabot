@@ -1,20 +1,20 @@
 ---
 # Daily purge at 00:01.
-- image: python3.9
+- image: python3.11
   name: daily-jvwiki-purge-cache
   command: make jvwiki-purge-cache
   no-filelog: true
   schedule: "1 0 * * *"
   emails: onfailure
 # Monthly purge at 00:05 on the first day of the month.
-- image: python3.9
+- image: python3.11
   name: monthly-jvwikt-jvws-purge-cache
   command: make jvwikt-jvws-purge-cache
   no-filelog: true
   schedule: "5 0 1 * *"
   emails: onfailure
 # Daily archive at 00:30.
-- image: python3.9
+- image: python3.11
   name: daily-jvwiki-archive
   command: make jvwiki-archive
   no-filelog: true
