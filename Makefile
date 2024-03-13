@@ -28,7 +28,7 @@ install-venv:
 	source .pyvenv/bin/activate
 	$(PYTHON) -m pip install -U pip
 	# Packages for Pywikibot.
-	$(PYTHON) -m pip install mwparserfromhell requests requests-oauthlib setuptools
+	$(PYTHON) -m pip install mwparserfromhell packaging requests requests-oauthlib setuptools
 
 uninstall-venv:
 	rm -rf "${HOME}/.cache/pip"
