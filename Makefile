@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 PYTHON = ${HOME}/.pyvenv/bin/python3
-PWB = /data/project/shared/pywikibot/stable/pwb.py
+PWB = ${HOME}/.src/pywikibot/pwb.py
 CFG = ${HOME}/.pywikibot
 
 jvwiki-purge-cache:
